@@ -6,7 +6,13 @@
 body {
 	background-color: black;
 	font-family: sans-serif;
+}
+
+.all{
+	margin: 0 auto;
+	width: 1200px;
 	text-align: center;
+	position: relative;
 }
 
 #level_title {
@@ -16,5 +22,50 @@ body {
 }
 
 #level_image {
+	width: 600px;
 	height: 500px;
+	float: right;
 }
+
+#key {
+	position: absolute;
+	display: none; 
+}
+
+.verhaaltje{
+	color: white;
+	width: 200px;
+}
+
+button{
+	width: 200px;
+	height: 200px;
+	background-color: rgba(0,0,0,0.6);
+	color: white;
+}
+
+#option1{
+
+}
+
+#option2{
+	display: none;
+}
+
+#option3{
+	display: none;
+}
+
+.flexbox{
+	display: flex;
+	flex direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.buttonsflex{
+	width: 200px;
+}
+

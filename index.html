@@ -7,24 +7,51 @@
 </head>
 <body>
 
-<main>
+<div class="all">
 
-	<section id="status"></section>
+	<main>
 
-	<section id="level_title">Start</section>
+		<section id="status"></section>
 
-	<nav>
+		<section id="level_title">Start</section>
 
-		<button id="option1" onclick="javascript:Level1()">Start</button>
-		<button id="option2"></button>
-		<button id="option3"></button>
+		<div id="key">
+			<img src="img/key.png" alt="key" width="150" height="100">
+		</div>
 
-	</nav>
+		<div class="flexbox">
 
-	<img id="level_image" class="level_image" src="img/rpg.png">
+			<nav class="buttonsflex">
+				<button id="option1" onClick="javascript:Level1()">Start</button>
+				<button id="option2"></button>
+				<button id="option3"></button>
+			</nav>
 
-</main>
+			<img id="level_image" class="level_image" src="img/rpg.png">
 
-	<script src="js/game.js" type="text/javascript" ></script>
+			<p class="verhaaltje">
+				Functionele eisen beschrijven welke functionaliteit je eindproduct moet bevatten.
+
+				Deze opdracht moet aan de volgende functionele eisen voldoen:
+
+				het spel heeft tenminste 10 verschillende locaties (elke locatie heeft een titel, een foto, een verhaaltje en meerdere keuzes);
+				het spel heeft een startpagina (met uitleg over hoe het spel werkt, een sfeerfoto, de titel van het spel, en een knop "start");
+				de speler krijgt de mogelijkheid om voorwerpen op te pakken;
+				de speler mag bepaalde locaties niet betreden zonder het juiste voorwerp;
+				het verhaal kent een "win" einde;
+				het verhaal kent meerdere "faal" eindes;
+				het verhaal kent meerdere routes en meerdere eindpunten, je kunt het verhaal dus meerdere keren spelen met verschillende uitkomsten;
+				je kiest afbeeldingen die de sfeer in het spel ondersteunen;
+				Je kunt bij het verzinnen van het verhaal denken aan een "Escape Room" of een spel zoals "Myst".
+			</p>
+
+		</div>
+			
+	</main>
+
+</div>
+
+<script src="js/game.js" type="text/javascript" ></script>
+
 </body>
 </html>

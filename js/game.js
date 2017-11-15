@@ -1,34 +1,32 @@
 // javascript library for simple game development
-
 document.getElementById('option1').innerHTML = 'Start';
 document.getElementById('level_title').innerHTML = 'Start het spel';
 
+
+
+var HasIcecream = false;
+var HasBal = false;
+var HasHoningpot = false;
+
+
+
 var HasKey = false;
-
-// jquery variant
-//$('#option1').html('Dit is keuze 1');
-
-
-// https://www.youtube.com/watch?v=4ba1BqJ4S2M
-
-
-
 function Level1() {
 	console.log("Level1()");
 
-	var opt1 = document.getElementById('option1');
-	opt1.innerHTML = 'Level 1: optie 1';
-	opt1.setAttribute("onClick", "javascript:Level1();");
+	document.getElementById('option1').innerHTML = 'Level 1: optie 1';
+	document.getElementById('option2').innerHTML = 'Level 1: optie 2';
+	document.getElementById('option3').innerHTML = 'Level 1: optie 3';
+
+	document.getElementById('option1').style.display = "block";
+	document.getElementById('option2').style.display = "block";
+	document.getElementById('option3').style.display = "block";
 
 	document.getElementById('level_title').innerHTML = 'Level 1';
 	document.getElementById('level_image').src = 'img/level1.jpg';
+	document.getElementById('key').style.display = "block";
 
-
-	// only allow option 2 if user has a key in his inventory
-
-	var opt2 = document.getElementById('option2');
-	opt2.innerHTML = 'Level 1: optie 2';
-	opt2.onclick = function(){
+	document.getElementById('option1').onclick = function() {
 		if(HasKey){
 			Level2();
 		} else {
@@ -36,17 +34,21 @@ function Level1() {
 		}
 	}
 
-	var opt3 = document.getElementById('option3');
-	opt3.innerHTML = 'Level 1: optie 3';
-	opt3.onclick = function(){
+	document.getElementById('key').onclick = function(){
+		document.getElementById('key').style.display = "none";
 		HasKey = true;
-		if(HasKey){
-			Level2();
-		} else {
-			alert('U dont haz key dumbass')
-
-		}
 	}
+
+
+
+
+
+
+
+
+
+
+	
 }
 
 function Level2() {
@@ -54,29 +56,96 @@ function Level2() {
 
 	var opt1 = document.getElementById('option1');
 	opt1.innerHTML = 'Level 2: optie 1';
-	opt1.onClick = 'javascript:Level3();';
+	opt1.setAttribute("onClick", "javascript:Level3();");
+
 
 	document.getElementById('level_title').innerHTML = 'Level 2';
 	document.getElementById('level_image').src = 'img/level2.jpg';
+
+
+
+	var opt2 = document.getElementById('option2');
+	opt2.innerHTML = 'Level 2: optie 2';
+	opt2.onclick = function(){
+		if (HasIcecream) {
+			Level4();		
+		} else {
+			Level1();
+			alert('u dont haz icecream dumbass')
+		}
+	}
+
+
+	var opt2 = document.getElementById('option3');
+	opt2.innerHTML = 'Level 2: optie 3';
+	opt2.onclick = function(){
+		HasIcecream = true;
+		if (HasIcecream) {
+			Level4();		
+		} else {
+			Level1();
+			alert('u dont haz icecream dumbass')
+		}
+	}
 }
 
 
 function Level3() {
 	console.log("Level3()");
 
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = 'Level 3: optie 1';
+	opt1.setAttribute("onClick", "javascript:Level1();");
 
 
 	document.getElementById('level_title').innerHTML = 'Level 3';
 	document.getElementById('level_image').src = 'img/level3.jpg';
+
+	var opt2 = document.getElementById('option2');
+	opt2.innerHTML = 'Level 3: optie 2';
+	opt2.onclick = function(){
+		HasBal = true;
+		if (HasBal) {
+			Level4();		
+		} else {
+			alert('u dont haz bal dumbass')
+		}
+	}
+
+	var opt3 = document.getElementById('option3');
+	opt3.innerHTML = 'Level 3: optie 3';
+	opt3.onclick = function(){
+		if (HasBal) {
+			Level4();		
+		} else {
+			Level2();
+			alert('u dont haz bal dumbass')		
+		}
+	}
 }
 
 
 function Level4() {
 	console.log("Level4()");
 
+	var opt1 = document.getElementById('option1');
+	opt1.innerHTML = 'Level 4: optie 1';
+	opt1.setAttribute("onClick", "javascript:Level3();");
 
 	document.getElementById('level_title').innerHTML = 'Level 4';
 	document.getElementById('level_image').src = 'img/level4.jpg';
+
+	var opt3 = document.getElementById('option2');
+	opt3.innerHTML = 'Level 4: optie 2';
+	opt3.onclick = function(){
+		HasHoningpot = true;
+		if (HasHoningpot) {
+			Level4();		
+		} else {
+			Level2();
+			alert('u dont haz honingpot dumbass')		
+		}
+	}
 }
 
 function Level5() {
