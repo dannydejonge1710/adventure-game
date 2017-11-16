@@ -27,10 +27,7 @@ body {
 	float: right;
 }
 
-#key {
-	position: absolute;
-	display: none; 
-}
+
 
 .verhaaltje{
 	color: white;
@@ -69,3 +66,25 @@ button{
 	width: 200px;
 }
 
+
+
+
+#levels{
+	position: absolute;
+	
+}
+
+
+#levels2{
+	position: absolute;
+	top: 200px;
+	
+}
+
+#key {
+	position: absolute;
+	top: 450px;
+	left: 850px;
+	z-index: 99;
+	display: none;
+}

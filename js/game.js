@@ -26,7 +26,8 @@ function Level1() {
 		if(HasKey){
 			Level2();
 		} else {
-			alert('U dont haz key dumbass');
+			Level2();
+			alert('U dont haz 1 Up dumbass');
 		}
 	}
 
@@ -38,7 +39,7 @@ function Level1() {
 
 
 	document.getElementById('key').onclick = function(){
-		document.getElementById('key').style.display = "none";
+		document.getElementById('key').style.right = "200px";
 		HasKey = true;
 	}
 
