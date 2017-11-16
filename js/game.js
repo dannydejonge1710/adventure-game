@@ -3,26 +3,22 @@ document.getElementById('option1').innerHTML = 'Start';
 document.getElementById('level_title').innerHTML = 'Start het spel';
 
 
-
-var HasIcecream = false;
-var HasBal = false;
-var HasHoningpot = false;
-
-
-
 var HasKey = false;
 function Level1() {
+
+	//Destiny The Fallen Dreg
+
 	console.log("Level1()");
 
-	document.getElementById('option1').innerHTML = 'Level 1: optie 1';
-	document.getElementById('option2').innerHTML = 'Level 1: optie 2';
-	document.getElementById('option3').innerHTML = 'Level 1: optie 3';
+	document.getElementById('option1').innerHTML = 'Level 1: Shotgun';
+	document.getElementById('option2').innerHTML = 'Level 1: Zwaard';
+	document.getElementById('option3').innerHTML = 'Level 1: Laser';
 
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
 
-	document.getElementById('level_title').innerHTML = 'Level 1';
+	document.getElementById('level_title').innerHTML = 'Chamber 1';
 	document.getElementById('level_image').src = 'img/level1.jpg';
 	document.getElementById('key').style.display = "block";
 
@@ -33,6 +29,13 @@ function Level1() {
 			alert('U dont haz key dumbass');
 		}
 	}
+
+	document.getElementById('option2').onclick = function() {
+	document.getElementById('option2').setAttribute("onClick", "javascript:Level3();");
+
+	}
+
+
 
 	document.getElementById('key').onclick = function(){
 		document.getElementById('key').style.display = "none";
@@ -52,6 +55,9 @@ function Level1() {
 }
 
 function Level2() {
+
+	//Destiny The Fallen Shank
+
 	console.log("Level2()");
 
 	var opt1 = document.getElementById('option1');
@@ -91,6 +97,9 @@ function Level2() {
 
 
 function Level3() {
+
+	//Destiny The Fallen Servitor
+
 	console.log("Level3()");
 
 	var opt1 = document.getElementById('option1');
@@ -126,6 +135,9 @@ function Level3() {
 
 
 function Level4() {
+
+	//Destiny The Hive Ogre
+
 	console.log("Level4()");
 
 	var opt1 = document.getElementById('option1');
@@ -149,6 +161,9 @@ function Level4() {
 }
 
 function Level5() {
+
+	//Destiny The Hive Acolyte
+
 	console.log("Level5()");
 
 
@@ -158,6 +173,9 @@ function Level5() {
 }
 
 function Level6() {
+
+	//Destiny The Vex Hobgoblin
+
 	console.log("Level6()");
 
 
@@ -168,6 +186,9 @@ function Level6() {
 
 
 function Level7() {
+
+	//Destiny The Vex Harpy
+
 	console.log("Level7()");
 
 
@@ -180,31 +201,10 @@ function Level7() {
 function Level8() {
 	console.log("Level8()");
 
-
+	//Destiny The Cabal Psion
 
 	document.getElementById('level_title').innerHTML = 'Level 8';
 	document.getElementById('level_image').src = 'img/level8.jpg';
 }
 
-
-
-function Level9() {
-	console.log("Level9()");
-
-
-
-	document.getElementById('level_title').innerHTML = 'Level 9';
-	document.getElementById('level_image').src = 'img/level9.jpg';
-}
-
-
-
-function Level10() {
-	console.log("Level10()");
-
-
-
-	document.getElementById('level_title').innerHTML = 'Level 10';
-	document.getElementById('level_image').src = 'img/level10.jpg';
-}
 
