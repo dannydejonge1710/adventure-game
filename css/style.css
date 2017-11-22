@@ -4,7 +4,8 @@
 }
 
 body {
-	background-color: black;
+	background-image: url(../img/universe.jpg);
+	background-position: stretch;
 	font-family: sans-serif;
 }
 
@@ -16,20 +17,23 @@ body {
 }
 
 #level_title {
-	font-size: 35px;
+	font-size: 50px;
 	color: white;		
 	font-weight: bold;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 #level_image {
-	width: 600px;
-	height: 500px;
+	width: 800px;
+	height: 600px;
 	float: right;
+	border-radius: 20px;
+	margin-right: 100px;
+	margin-left: 100px;
 }
 
-
-
-.verhaaltje{
+#verhaaltje{
 	color: white;
 	width: 200px;
 }
@@ -39,6 +43,8 @@ button{
 	height: 200px;
 	background-color: rgba(0,0,0,0.6);
 	color: white;
+	font-size: 30px;
+	border-radius: 20px;
 }
 
 #option1{
@@ -59,32 +65,73 @@ button{
 	flex-wrap: wrap;
 	position: relative;
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1400px;
 }
 
 .buttonsflex{
 	width: 200px;
 }
 
-
-
-
-#levels{
-	position: absolute;
-	
-}
-
-
-#levels2{
-	position: absolute;
-	top: 200px;
-	
-}
-
 #key {
 	position: absolute;
-	top: 450px;
-	left: 850px;
+	top: 580px;
+	left: 1050px;
+	z-index: 99;
+	display: none;
+}
+
+#key2 {
+	position: absolute;
+	top: 580px;
+	left: 1050px;
+	z-index: 99;
+	display: none;
+}
+
+#key3 {
+	position: absolute;
+	top: 580px;
+	left: 1050px;
+	z-index: 99;
+	display: none;
+}
+
+#key4 {
+	position: absolute;
+	top: 580px;
+	left: 1050px;
+	z-index: 99;
+	display: none;
+}
+
+#key5 {
+	position: absolute;
+	top: 580px;
+	left: 1050px;
+	z-index: 99;
+	display: none;
+}
+
+#key6 {
+	position: absolute;
+	top: 580px;
+	left: 1050px;
+	z-index: 99;
+	display: none;
+}
+
+#key7 {
+	position: absolute;
+	top: 580px;
+	left: 1050px;
+	z-index: 99;
+	display: none;
+}
+
+#key8 {
+	position: absolute;
+	top: 580px;
+	left: 1050px;
 	z-index: 99;
 	display: none;
 }
