@@ -202,6 +202,7 @@ function Level3() {
 }
 
 var HasKey4 = false;
+var HasFalseKey10 = false;
 function Level4() {
 
 	//Destiny The Hive Ogre
@@ -227,12 +228,17 @@ function Level4() {
 	document.getElementById('falsekey9').style.display = "block";
 
 	document.getElementById('option1').onclick = function() {
-		if(HasKey4){
+		if (HasKey4){
 			Level5();
+			document.getElementById('falsekey9').style.display = "none";
+		} else if(HasFalseKey10){
+			LevelUnknown1();
+			document.getElementById('key4').style.display = "none";
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key4').style.display = "none";
+			document.getElementById('falsekey9').style.display = "none";
 			HasKey = false;
 		}
 	}
@@ -240,10 +246,15 @@ function Level4() {
 	document.getElementById('option2').onclick = function() {
 		if(HasKey4){
 			Leveldead();
+			document.getElementById('falsekey9').style.display = "none";
+		}else if(HasFalseKey10){
+			LevelUnknown1();
+			document.getElementById('key4').style.display = "none";
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key4').style.display = "none";
+			document.getElementById('falsekey9').style.display = "none";
 			HasKey = false;
 		}
 	}
@@ -251,10 +262,15 @@ function Level4() {
 	document.getElementById('option3').onclick = function() {
 		if(HasKey4){
 			Leveldead();
+			document.getElementById('falsekey9').style.display = "none";
+		}else if(HasFalseKey10){
+			LevelUnknown1();
+			document.getElementById('key4').style.display = "none";
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key4').style.display = "none";
+			document.getElementById('falsekey9').style.display = "none";
 			HasKey = false;
 		}
 	}
@@ -262,6 +278,11 @@ function Level4() {
 	document.getElementById('key4').onclick = function(){
 	document.getElementById('key4').style.display = "none";
 	HasKey4 = true;
+	}
+
+	document.getElementById('falsekey9').onclick = function(){
+	document.getElementById('falsekey9').style.display = "none";
+	HasFalseKey10 = true;
 	}
 }
 
@@ -510,6 +531,7 @@ function Level8() {
 	document.getElementById('key8').style.display = "none";
 	HasKey8 = true;
 	}
+
 }
 
 function Levelwin() {
@@ -535,5 +557,62 @@ function Levelwin() {
 	document.getElementById('option1').setAttribute("onClick", "javascript:Level1();");
 }
 
+function LevelUnknown1() {
+	console.log("LevelUnknown1");
+
+	document.getElementById('option1').innerHTML = 'Shotgun';
+	document.getElementById('option2').innerHTML = 'Zwaard';
+	document.getElementById('option3').innerHTML = 'Laser';
+
+	document.getElementById('option1').style.display = "block";
+	document.getElementById('option2').style.display = "block";
+	document.getElementById('option3').style.display = "block";
+
+	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
+
+	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
+	document.getElementById('level_image').src = 'img/level7.jpg';
+	document.getElementById('key7').src = "img/key7.png";
+
+	document.getElementById('key7').style.display = "block";
+
+	document.getElementById('option1').onclick = function() {
+		if(HasKey7){
+			Level8();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key7').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option2').onclick = function() {
+		if(HasKey7){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key7').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option3').onclick = function() {
+		if(HasKey7){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key7').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('key7').onclick = function(){
+	document.getElementById('key7').style.display = "none";
+	HasKey7 = true;
+	}
+}
 
 
