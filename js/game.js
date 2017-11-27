@@ -557,7 +557,89 @@ function Levelwin() {
 	document.getElementById('option1').setAttribute("onClick", "javascript:Level1();");
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var HasKey11 = false;
 function LevelUnknown1() {
+
+	// The Fallen Captain
+
+	console.log("LevelUnknown1");
+
+	document.getElementById('option1').innerHTML = 'Shotgun';
+	document.getElementById('option2').innerHTML = 'Zwaard';
+	document.getElementById('option3').innerHTML = 'Laser';
+
+	document.getElementById('option1').style.display = "block";
+	document.getElementById('option2').style.display = "block";
+	document.getElementById('option3').style.display = "block";
+
+	document.getElementById('verhaaltje').innerHTML = "";
+
+	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
+	document.getElementById('level_image').src = 'img/level11.jpg';
+	document.getElementById('key11').src = "img/key11.png";
+
+	document.getElementById('key11').style.display = "block";
+
+	document.getElementById('option1').onclick = function() {
+		if(HasKey11){
+			Level8();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key11').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option2').onclick = function() {
+		if(HasKey11){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key11').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option3').onclick = function() {
+		if(HasKey11){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key11').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('key11').onclick = function(){
+	document.getElementById('key11').style.display = "none";
+	HasKey11 = true;
+	}
+}
+
+var HasKey12 = false;
+
+function LevelUnknown2() {
+
+	//The Fallen Skiff
+
 	console.log("LevelUnknown1");
 
 	document.getElementById('option1').innerHTML = 'Shotgun';
@@ -571,48 +653,303 @@ function LevelUnknown1() {
 	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
 
 	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
-	document.getElementById('level_image').src = 'img/level7.jpg';
-	document.getElementById('key7').src = "img/key7.png";
+	document.getElementById('level_image').src = 'img/level12.jpg';
+	document.getElementById('key12').src = "img/key12.png";
 
-	document.getElementById('key7').style.display = "block";
+	document.getElementById('key12').style.display = "block";
 
 	document.getElementById('option1').onclick = function() {
-		if(HasKey7){
+		if(HasKey12){
 			Level8();
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
-			document.getElementById('key7').style.display = "none";
+			document.getElementById('key12').style.display = "none";
 			HasKey = false;
 		}
 	}
 
 	document.getElementById('option2').onclick = function() {
-		if(HasKey7){
+		if(HasKey12){
 			Leveldead();
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
-			document.getElementById('key7').style.display = "none";
+			document.getElementById('key12').style.display = "none";
 			HasKey = false;
 		}
 	}
 
 	document.getElementById('option3').onclick = function() {
-		if(HasKey7){
+		if(HasKey12){
 			Leveldead();
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
-			document.getElementById('key7').style.display = "none";
+			document.getElementById('key12').style.display = "none";
 			HasKey = false;
 		}
 	}
 
-	document.getElementById('key7').onclick = function(){
-	document.getElementById('key7').style.display = "none";
-	HasKey7 = true;
+	document.getElementById('key12').onclick = function(){
+	document.getElementById('key12').style.display = "none";
+	HasKey12 = true;
 	}
 }
+
+var HasKey13 = false;
+
+function LevelUnknown3() {
+
+	//The Hive Thrall
+
+	console.log("LevelUnknown3");
+
+	document.getElementById('option1').innerHTML = 'Shotgun';
+	document.getElementById('option2').innerHTML = 'Zwaard';
+	document.getElementById('option3').innerHTML = 'Laser';
+
+	document.getElementById('option1').style.display = "block";
+	document.getElementById('option2').style.display = "block";
+	document.getElementById('option3').style.display = "block";
+
+	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
+
+	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
+	document.getElementById('level_image').src = 'img/level13.jpg';
+	document.getElementById('key13').src = "img/key13.png";
+
+	document.getElementById('key13').style.display = "block";
+
+	document.getElementById('option1').onclick = function() {
+		if(HasKey13){
+			Level8();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key13').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option2').onclick = function() {
+		if(HasKey13){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key13').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option3').onclick = function() {
+		if(HasKey13){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key13').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('key13').onclick = function(){
+	document.getElementById('key13').style.display = "none";
+	HasKey13 = true;
+	}
+}
+
+var HasKey14 = false;
+
+function LevelUnknown4() {
+
+	// The Hive Tomb Ship
+
+	console.log("LevelUnknown4");
+
+	document.getElementById('option1').innerHTML = 'Shotgun';
+	document.getElementById('option2').innerHTML = 'Zwaard';
+	document.getElementById('option3').innerHTML = 'Laser';
+
+	document.getElementById('option1').style.display = "block";
+	document.getElementById('option2').style.display = "block";
+	document.getElementById('option3').style.display = "block";
+
+	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
+
+	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
+	document.getElementById('level_image').src = 'img/level14.jpg';
+	document.getElementById('key14').src = "img/key14.png";
+
+	document.getElementById('key14').style.display = "block";
+
+	document.getElementById('option1').onclick = function() {
+		if(HasKey14){
+			Level8();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key14').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option2').onclick = function() {
+		if(HasKey14){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key14').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option3').onclick = function() {
+		if(HasKey14){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key14').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('key14').onclick = function(){
+	document.getElementById('key14').style.display = "none";
+	HasKey14 = true;
+	}
+}
+
+var HasKey15 = false;
+
+function LevelUnknown5() {
+
+	// The Vex Hydra
+
+	console.log("LevelUnknown5");
+
+	document.getElementById('option1').innerHTML = 'Shotgun';
+	document.getElementById('option2').innerHTML = 'Zwaard';
+	document.getElementById('option3').innerHTML = 'Laser';
+
+	document.getElementById('option1').style.display = "block";
+	document.getElementById('option2').style.display = "block";
+	document.getElementById('option3').style.display = "block";
+
+	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
+
+	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
+	document.getElementById('level_image').src = 'img/level15.jpg';
+	document.getElementById('key15').src = "img/key15.png";
+
+	document.getElementById('key15').style.display = "block";
+
+	document.getElementById('option1').onclick = function() {
+		if(HasKey15){
+			Level8();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key15').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option2').onclick = function() {
+		if(HasKey15){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key15').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option3').onclick = function() {
+		if(HasKey15){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key15').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('key15').onclick = function(){
+	document.getElementById('key15').style.display = "none";
+	HasKey15 = true;
+	}
+}
+
+var HasKey16 = false;
+
+function LevelUnknown6() {
+
+	//The Cabal Colossus
+
+	console.log("LevelUnknown6");
+
+	document.getElementById('option1').innerHTML = 'Shotgun';
+	document.getElementById('option2').innerHTML = 'Zwaard';
+	document.getElementById('option3').innerHTML = 'Laser';
+
+	document.getElementById('option1').style.display = "block";
+	document.getElementById('option2').style.display = "block";
+	document.getElementById('option3').style.display = "block";
+
+	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
+
+	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
+	document.getElementById('level_image').src = 'img/level16.jpg';
+	document.getElementById('key16').src = "img/key16.png";
+
+	document.getElementById('key16').style.display = "block";
+
+	document.getElementById('option1').onclick = function() {
+		if(HasKey16){
+			Level8();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key16').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option2').onclick = function() {
+		if(HasKey16){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key16').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('option3').onclick = function() {
+		if(HasKey16){
+			Leveldead();
+		} else {
+			Level1();
+			alert('U dont haz Key dumbass');
+			document.getElementById('key16').style.display = "none";
+			HasKey = false;
+		}
+	}
+
+	document.getElementById('key16').onclick = function(){
+	document.getElementById('key16').style.display = "none";
+	HasKey16 = true;
+	}
+}
+
+
+
 
 
