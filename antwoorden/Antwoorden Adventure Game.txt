@@ -7,4 +7,13 @@ opt 1
 opt 3
 opt 1
 opt 2
-Back to start	
+Back to start
+
+Faal route 1 :
+GO!
+opt 1
+opt 2
+altijd dood
+
+faal route 2:
+	
