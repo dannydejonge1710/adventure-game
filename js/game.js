@@ -59,7 +59,6 @@ function Level1() {
 
 function Leveldead() {
 
-	//Je bent dood nu
 	HasKey = false;
 
 	console.log("Leveldead")
@@ -70,13 +69,16 @@ function Leveldead() {
 	document.getElementById('option2').style.display = "none";
 	document.getElementById('option3').style.display = "none";
 
-	document.getElementById('verhaaltje').innerHTML = "Je bent dood nu. Klik op 'Back to start' om opnieuw te beginnen.";
-	document.getElementById('level_title').innerHTML = 'YOURE DEAD';
+	document.getElementById('verhaaltje').innerHTML = "Nice try, you're dead now!";
+	document.getElementById('level_title').innerHTML = "YOU'RE DEAD NOW!";
 	document.getElementById('level_image').src = 'img/leveldead.jpg';
 
 	document.getElementById('option1').setAttribute("onClick", "javascript:Level1();");
 
 }
+
+
+
 
 var HasKey2 = false;
 function Level2() {
@@ -202,7 +204,7 @@ function Level3() {
 }
 
 var HasKey4 = false;
-var HasFalseKey10 = false;
+var HasFalseKey9 = false;
 function Level4() {
 
 	//Destiny The Hive Ogre
@@ -231,8 +233,8 @@ function Level4() {
 		if (HasKey4){
 			Level5();
 			document.getElementById('falsekey9').style.display = "none";
-		} else if(HasFalseKey10){
-			LevelUnknown1();
+		} else if(HasFalseKey9){
+			LevelTeleport();
 			document.getElementById('key4').style.display = "none";
 		} else {
 			Level1();
@@ -247,8 +249,8 @@ function Level4() {
 		if(HasKey4){
 			Leveldead();
 			document.getElementById('falsekey9').style.display = "none";
-		}else if(HasFalseKey10){
-			LevelUnknown1();
+		}else if(HasFalseKey9){
+			LevelTeleport();
 			document.getElementById('key4').style.display = "none";
 		} else {
 			Level1();
@@ -263,8 +265,8 @@ function Level4() {
 		if(HasKey4){
 			Leveldead();
 			document.getElementById('falsekey9').style.display = "none";
-		}else if(HasFalseKey10){
-			LevelUnknown1();
+		}else if(HasFalseKey9){
+			LevelTeleport();
 			document.getElementById('key4').style.display = "none";
 		} else {
 			Level1();
@@ -282,14 +284,16 @@ function Level4() {
 
 	document.getElementById('falsekey9').onclick = function(){
 	document.getElementById('falsekey9').style.display = "none";
-	HasFalseKey10 = true;
+	HasFalseKey9 = true;
 	}
 }
 
 var HasKey5 = false;
 
 function Level5() {
+
 	//The Hive Acolytes
+
 	console.log("Level5()");
 
 	document.getElementById('option1').innerHTML = 'Shotgun';
@@ -470,6 +474,7 @@ function Level7() {
 }
 
 var HasKey8 = false;
+var HasFalseKey10 = false;
 
 function Level8() {
 	//The Cabal Psion
@@ -497,9 +502,14 @@ function Level8() {
 	document.getElementById('option1').onclick = function() {
 		if(HasKey8){
 			Leveldead();
+			document.getElementById('falsekey10').style.display = "none";
+		} else if(HasFalseKey10){
+			LevelTeleport2();
+			document.getElementById('key8').style.display = "none";
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
+			document.getElementById('falsekey10').style.display = "none";
 			document.getElementById('key8').style.display = "none";
 			HasKey = false;
 		}
@@ -508,20 +518,31 @@ function Level8() {
 	document.getElementById('option2').onclick = function() {
 		if(HasKey8){
 			Levelwin();
+			document.getElementById('falsekey10').style.display = "none";
+		} else if(HasFalseKey10){
+			LevelTeleport2();
+			document.getElementById('key8').style.display = "none";
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
+			document.getElementById('falsekey10').style.display = "none";
 			document.getElementById('key8').style.display = "none";
 			HasKey = false;
 		}
+
 	}
 
 	document.getElementById('option3').onclick = function() {
 		if(HasKey8){
 			Leveldead();
+			document.getElementById('falsekey10').style.display = "none";
+		} else if(HasFalseKey10){
+			LevelTeleport2();
+			document.getElementById('key8').style.display = "none";
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
+			document.getElementById('falsekey10').style.display = "none";
 			document.getElementById('key8').style.display = "none";
 			HasKey = false;
 		}
@@ -532,6 +553,10 @@ function Level8() {
 	HasKey8 = true;
 	}
 
+	document.getElementById('falsekey10').onclick = function(){
+	document.getElementById('falsekey10').style.display = "none";
+	HasFalseKey10 = true;
+	}
 }
 
 function Levelwin() {
@@ -556,13 +581,6 @@ function Levelwin() {
 
 	document.getElementById('option1').setAttribute("onClick", "javascript:Level1();");
 }
-
-
-
-
-
-
-
 
 
 
@@ -597,9 +615,9 @@ function LevelUnknown1() {
 
 	document.getElementById('option1').onclick = function() {
 		if(HasKey11){
-			Level8();
+			LevelUnknown2();
 		} else {
-			Level1();
+			LevelUnknown1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key11').style.display = "none";
 			HasKey = false;
@@ -610,7 +628,7 @@ function LevelUnknown1() {
 		if(HasKey11){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key11').style.display = "none";
 			HasKey = false;
@@ -621,7 +639,7 @@ function LevelUnknown1() {
 		if(HasKey11){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key11').style.display = "none";
 			HasKey = false;
@@ -640,7 +658,7 @@ function LevelUnknown2() {
 
 	//The Fallen Skiff
 
-	console.log("LevelUnknown1");
+	console.log("LevelUnknown2");
 
 	document.getElementById('option1').innerHTML = 'Shotgun';
 	document.getElementById('option2').innerHTML = 'Zwaard';
@@ -660,7 +678,7 @@ function LevelUnknown2() {
 
 	document.getElementById('option1').onclick = function() {
 		if(HasKey12){
-			Level8();
+			Leveldead();
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
@@ -671,7 +689,7 @@ function LevelUnknown2() {
 
 	document.getElementById('option2').onclick = function() {
 		if(HasKey12){
-			Leveldead();
+			LevelUnknown3();
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
@@ -723,7 +741,7 @@ function LevelUnknown3() {
 
 	document.getElementById('option1').onclick = function() {
 		if(HasKey13){
-			Level8();
+			Leveldead();
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
@@ -912,7 +930,7 @@ function LevelUnknown6() {
 
 	document.getElementById('option1').onclick = function() {
 		if(HasKey16){
-			Level8();
+			Leveldead();
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
@@ -949,7 +967,46 @@ function LevelUnknown6() {
 	}
 }
 
+function LevelTeleport() {
 
+	//You've been teleported to an unknown level.
 
+	HasKey = false;
+
+	console.log("LevelTeleport")
+
+	document.getElementById('option1').innerHTML = 'Go!';
+
+	document.getElementById('option1').style.display = "block";
+	document.getElementById('option2').style.display = "none";
+	document.getElementById('option3').style.display = "none";
+
+	document.getElementById('verhaaltje').innerHTML = "You've been teleported to an unknown chamber!";
+	document.getElementById('level_title').innerHTML = "YOU'VE BEEN TELEPORTED!";
+	document.getElementById('level_image').src = 'img/levelteleport.jpg';
+
+	document.getElementById('option1').setAttribute("onClick", "javascript:LevelUnknown1();");
+}
+
+function LevelTeleport2() {
+
+	//You've been teleported to an unknown level.
+
+	HasKey = false;
+
+	console.log("LevelTeleport")
+
+	document.getElementById('option1').innerHTML = 'Go!';
+
+	document.getElementById('option1').style.display = "block";
+	document.getElementById('option2').style.display = "none";
+	document.getElementById('option3').style.display = "none";
+
+	document.getElementById('verhaaltje').innerHTML = "You've been teleported to an unknown chamber!";
+	document.getElementById('level_title').innerHTML = "YOU'VE BEEN TELEPORTED!";
+	document.getElementById('level_image').src = 'img/levelteleport.jpg';
+
+	document.getElementById('option1').setAttribute("onClick", "javascript:LevelUnknown1();");
+}
 
 
