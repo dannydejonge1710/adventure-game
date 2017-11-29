@@ -14,6 +14,8 @@ function Level1() {
 	document.getElementById('option2').innerHTML = 'Zwaard';
 	document.getElementById('option3').innerHTML = 'Laser';
 
+	document.getElementById('optiondownload').style.display = "none";
+
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
@@ -355,6 +357,7 @@ function Level5() {
 var HasKey6 = false;
 
 function Level6() {
+
 	//The Vex Hobgoblin
 
 	console.log("Level6()");
@@ -416,6 +419,7 @@ function Level6() {
 var HasKey7 = false;
 
 function Level7() {
+
 	//The Vex Harpies
 
 	console.log("Level7()");
@@ -479,6 +483,7 @@ var HasKey8 = false;
 var HasFalseKey10 = false;
 
 function Level8() {
+
 	//The Cabal Psion
 
 	console.log("Level8()");
@@ -573,6 +578,7 @@ function Levelwin() {
 
 	document.getElementById('option1').innerHTML = 'Back To Start';
 
+	document.getElementById('optiondownload').style.display = "block";
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "none";
 	document.getElementById('option3').style.display = "none";
@@ -585,13 +591,6 @@ function Levelwin() {
 
 	document.getElementById('option1').setAttribute("onClick", "javascript:Level1();");
 }
-
-
-
-
-
-
-
 
 
 var HasKey11 = false;
@@ -798,7 +797,7 @@ function LevelUnknown4() {
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
 
-	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
+	document.getElementById('verhaaltje').innerHTML = "A Tombship is a Hive dropship. They possess a form of a teleportation, warping in and out of combat zones with green wormholes. The Tombships also have defensive capabilities, as they are able to launch purple explosive blasts, known as Axion Darts, at enemy targets.";
 
 	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
 	document.getElementById('level_image').src = 'img/level14.jpg';
@@ -808,7 +807,7 @@ function LevelUnknown4() {
 
 	document.getElementById('option1').onclick = function() {
 		if(HasKey14){
-			Level8();
+			Leveldead();
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
@@ -830,7 +829,7 @@ function LevelUnknown4() {
 
 	document.getElementById('option3').onclick = function() {
 		if(HasKey14){
-			Leveldead();
+			LevelUnknown5();
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
@@ -861,9 +860,9 @@ function LevelUnknown5() {
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
 
-	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
+	document.getElementById('verhaaltje').innerHTML = "Hydras are segmented machines that float through the air to attack; each segment bearing its own turret, these robotic centipedes fire these turrets as they wriggle through the air. Hydras also utilize unidirectional defensive circular shields and are equipped with a powerful weapon called the Aeon Maul. In addition to being formidable combatants, Hydras serve as major processing nodes for the Vex network.";
 
-	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
+	document.getElementById('level_title').innerHTML = 'Unknown Chamber 2';
 	document.getElementById('level_image').src = 'img/level15.jpg';
 	document.getElementById('key15').src = "img/key15.png";
 
@@ -871,7 +870,7 @@ function LevelUnknown5() {
 
 	document.getElementById('option1').onclick = function() {
 		if(HasKey15){
-			Level8();
+			Leveldead();
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
@@ -882,7 +881,7 @@ function LevelUnknown5() {
 
 	document.getElementById('option2').onclick = function() {
 		if(HasKey15){
-			Leveldead();
+			LevelUnknown6();
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
@@ -924,9 +923,9 @@ function LevelUnknown6() {
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
 
-	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
+	document.getElementById('verhaaltje').innerHTML = "Massive, even for Cabal standards, they lead through their own relentless demeanor, wielding devastating Gatling-style Heavy Slug Throwers and Cabal Slug Launchers.";
 
-	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
+	document.getElementById('level_title').innerHTML = 'Unknown Chamber 3';
 	document.getElementById('level_image').src = 'img/level16.jpg';
 	document.getElementById('key16').src = "img/key16.png";
 
@@ -1010,7 +1009,7 @@ function LevelTeleport2() {
 	document.getElementById('level_title').innerHTML = "YOU'VE BEEN TELEPORTED!";
 	document.getElementById('level_image').src = 'img/levelteleport.jpg';
 
-	document.getElementById('option1').setAttribute("onClick", "javascript:LevelUnknown1();");
+	document.getElementById('option1').setAttribute("onClick", "javascript:LevelUnknown4();");
 }
 
 

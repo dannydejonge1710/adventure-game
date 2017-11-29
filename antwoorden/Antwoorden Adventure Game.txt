@@ -16,4 +16,8 @@ opt 2
 altijd dood
 
 faal route 2:
+GO!
+opt 3
+opt 2
+altijd dood
 	
