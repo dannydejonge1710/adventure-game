@@ -100,8 +100,8 @@ button{
 
 #key4 {
 	position: absolute;
-	top: 100px;
-	left: 500px;
+	top: 150px;
+	left: 1050px;
 	z-index: 99;
 	display: none;
 }
@@ -109,7 +109,7 @@ button{
 #key5 {
 	position: absolute;
 	top: 580px;
-	left: 400px;
+	left: 500px;
 	z-index: 99;
 	display: none;
 }
@@ -117,7 +117,7 @@ button{
 #key6 {
 	position: absolute;
 	top: 235px;
-	left: 670px;
+	left: 900px;
 	z-index: 99;
 	display: none;
 }
@@ -141,7 +141,7 @@ button{
 #falsekey9 {
 	position: absolute;
 	top: 500px;
-	left: 400px;
+	left: 420px;
 	z-index: 99;
 	display: none;
 }
@@ -164,16 +164,16 @@ button{
 
 #key12 {
 	position: absolute;
-	top: 200px;
-	left: 800px;
+	top: 600px;
+	left: 400px;
 	z-index: 99;
 	display: none;
 }
 
 #key13 {
 	position: absolute;
-	top: 200px;
-	left: 800px;
+	top: 180px;
+	left: 1000px;
 	z-index: 99;
 	display: none;
 }

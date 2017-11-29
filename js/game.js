@@ -70,7 +70,7 @@ function Leveldead() {
 	document.getElementById('option3').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Nice try, you're dead now!";
-	document.getElementById('level_title').innerHTML = "YOU'RE DEAD NOW!";
+	document.getElementById('level_title').innerHTML = "YOU'RE DEAD!";
 	document.getElementById('level_image').src = 'img/leveldead.jpg';
 
 	document.getElementById('option1').setAttribute("onClick", "javascript:Level1();");
@@ -230,7 +230,7 @@ function Level4() {
 	document.getElementById('falsekey9').style.display = "block";
 
 	document.getElementById('option1').onclick = function() {
-		if (HasKey4){
+		if(HasKey4){
 			Level5();
 			document.getElementById('falsekey9').style.display = "none";
 		} else if(HasFalseKey9){
@@ -279,11 +279,13 @@ function Level4() {
 
 	document.getElementById('key4').onclick = function(){
 	document.getElementById('key4').style.display = "none";
+	document.getElementById('falsekey9').style.display = "none";
 	HasKey4 = true;
 	}
 
 	document.getElementById('falsekey9').onclick = function(){
 	document.getElementById('falsekey9').style.display = "none";
+	document.getElementById('key4').style.display = "none"
 	HasFalseKey9 = true;
 	}
 }
@@ -550,11 +552,13 @@ function Level8() {
 
 	document.getElementById('key8').onclick = function(){
 	document.getElementById('key8').style.display = "none";
+	document.getElementById('falsekey10').style.display = "none";
 	HasKey8 = true;
 	}
 
 	document.getElementById('falsekey10').onclick = function(){
 	document.getElementById('falsekey10').style.display = "none";
+	document.getElementById('key8').style.display = "none";
 	HasFalseKey10 = true;
 	}
 }
@@ -605,7 +609,7 @@ function LevelUnknown1() {
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
 
-	document.getElementById('verhaaltje').innerHTML = "";
+	document.getElementById('verhaaltje').innerHTML = "The Captain is a class of Fallen. They are a known rank of Fallen, carrying themselves with an air of superiority and nobility. They have been shown to wield most Fallen weapons, and are almost always enshrouded within an absorption shield. They have the ability to teleport short distances.";
 
 	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
 	document.getElementById('level_image').src = 'img/level11.jpg';
@@ -668,9 +672,9 @@ function LevelUnknown2() {
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
 
-	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
+	document.getElementById('verhaaltje').innerHTML = "Slipping out of stealth only to offload a crew of Fallen, the Skiff is rarely seen. On the other hand, its rumbling, booming arrival is difficult to miss - as are the weapons it uses to support its troop deployments.";
 
-	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
+	document.getElementById('level_title').innerHTML = 'Unknown Chamber 2';
 	document.getElementById('level_image').src = 'img/level12.jpg';
 	document.getElementById('key12').src = "img/key12.png";
 
@@ -731,9 +735,9 @@ function LevelUnknown3() {
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
 
-	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
+	document.getElementById('verhaaltje').innerHTML = "Thrall are the smallest, weakest and fastest Hive enemies. Their main purpose is to overwhelm their enemies with sheer volume and numbers, although it doesn't take that much effort to kill one. Feral and fearless, Thralls are a plague upon the battlefield. Their swarming, twisted frames are driven by unfettered rage, and of all the creatures of the Hive, they are the fastest.";
 
-	document.getElementById('level_title').innerHTML = 'Unknown Chamber 1';
+	document.getElementById('level_title').innerHTML = 'Unknown Chamber 3';
 	document.getElementById('level_image').src = 'img/level13.jpg';
 	document.getElementById('key13').src = "img/key13.png";
 
