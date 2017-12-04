@@ -15,7 +15,6 @@ function Level1() {
 	document.getElementById('option3').innerHTML = 'Laser';
 
 	document.getElementById('optiondownload').style.display = "none";
-
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
@@ -24,7 +23,6 @@ function Level1() {
 	document.getElementById('level_image').src = "img/level1.jpg";
 	document.getElementById('key').src = "img/key.png";
 	document.getElementById('verhaaltje').innerHTML = "Dregs usually carry Shock Daggers and Shock Pistols, occasionally using Shock Grenades, and rarely Shrapnel Launchers. They are undisciplined fighters, and will hiss and clatter, revealing their position. They seem to wear only light armor with little to no exo-atmospheric protection, and will melee at close ranges, though they aren't as strong as more elite Fallen variants.";
-
 
 	document.getElementById('key').style.display = "block";
 
@@ -76,7 +74,6 @@ function Leveldead() {
 	document.getElementById('level_image').src = 'img/leveldead.jpg';
 
 	document.getElementById('option1').setAttribute("onClick", "javascript:Level1();");
-
 }
 
 
@@ -140,7 +137,6 @@ function Level2() {
 	document.getElementById('key2').style.display = "none";
 	HasKey2 = true;
 	}
-
 }
 
 var HasKey3 = false;
