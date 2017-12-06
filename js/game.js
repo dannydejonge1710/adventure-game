@@ -18,6 +18,7 @@ function Level1() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('level_title').innerHTML = 'Chamber 1';
 	document.getElementById('level_image').src = "img/level1.jpg";
@@ -68,6 +69,7 @@ function Leveldead() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "none";
 	document.getElementById('option3').style.display = "none";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Nice try, you're dead now!";
 	document.getElementById('level_title').innerHTML = "YOU'RE DEAD!";
@@ -93,6 +95,7 @@ function Level2() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Shanks attack in small swarms and fire small plasma cannons in short bursts. For the most part, their attacks are relatively weak. They can also boost themselves up to avoid grenades or small arms fire, but this tactic isn't used often.";
 	document.getElementById('level_title').innerHTML = 'Chamber 2';
@@ -153,6 +156,7 @@ function Level3() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "A Servitor is a spherical, mechanical Fallen class. Servitors can float in air and shoot purple Void blasts from their eye. A Servitor's weak point is the center of its eye.They provide the Fallen's life-sustaining ether and are treated as gods by the Fallen.";
 
@@ -216,6 +220,7 @@ function Level4() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "When engaging Ogres, be mindful that they have powerful attacks, making almost any position unsafe regardless of cover. At range, they will use Void blasts from their foreheads that can easily disorient and take down players. However, this spot is also the main weak point on an Ogre, and shooting there will deal critical damage. Therefore, be sure to try and get an angle off to the side, away from the main line of fire of the Ogre's energy blast to get easy shots on its forehead without it being able to keep track of you. Close combat is ill-advised, as their powerful melee attacks will make short work of players, so always keep your distance.";
 
@@ -250,14 +255,17 @@ function Level4() {
 		}else if(HasFalseKey9){
 			LevelTeleport();
 			document.getElementById('key4').style.display = "none";
+
 		} else {
 			Level1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key4').style.display = "none";
 			document.getElementById('falsekey9').style.display = "none";
 			HasKey = false;
-		}
+		}	
 	}
+
+	HasKey4 = false;
 
 	document.getElementById('option3').onclick = function() {
 		if(HasKey4){
@@ -303,6 +311,7 @@ function Level5() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Acolytes fight in small groups of two or three, often accompanied by a Knight and/or Wizard, and tend to prefer ranged attacks, but they can melee in close quarters if necessary. Acolytes will often take cover when they spot an enemy.";
 	document.getElementById('level_title').innerHTML = 'Chamber 5';
@@ -365,6 +374,7 @@ function Level6() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Hobgoblins are a class of the Vex species. Hobgoblins are larger than their Goblin brethren and can be distinguished by their larger size, different head shape, and distinctive tails. They are designed to attack from a distance using their Line Rifles. Attacking a Hobgoblin will cause them to crouch and emit a solar-based shield that blocks all damage for a few seconds. This shield will cause minor damage if touched.";
 	document.getElementById('level_title').innerHTML = 'Chamber 6';
@@ -427,6 +437,7 @@ function Level7() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Harpies are a type of Vex. Harpies are smaller, flying enemies that rapidly dart in and out of battle, occasionally firing from their filament-filled eyes.";
 
@@ -491,6 +502,7 @@ function Level8() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Psions are a class of the Cabal species. Psions are smaller than other Cabal, and use their mental powers to confront their enemies and pilot the massive vehicles they use. In combat, Psions utilize standard rifles, and are physically weaker than their Cabal brethren, but make up for it with a smaller frame, greater agility, and powerful shockwave attacks that can deal heavy damage.";
 
@@ -578,6 +590,7 @@ function Levelwin() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "none";
 	document.getElementById('option3').style.display = "none";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Je hebt gewonnen nu. Klik op 'Back to start' om opnieuw te beginnen!";
 
@@ -603,6 +616,7 @@ function LevelUnknown1() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "The Captain is a class of Fallen. They are a known rank of Fallen, carrying themselves with an air of superiority and nobility. They have been shown to wield most Fallen weapons, and are almost always enshrouded within an absorption shield. They have the ability to teleport short distances.";
 
@@ -618,7 +632,6 @@ function LevelUnknown1() {
 		} else {
 			LevelUnknown1();
 			alert('U dont haz Key dumbass');
-			document.getElementById('key11').style.display = "none";
 			HasKey = false;
 		}
 	}
@@ -629,7 +642,6 @@ function LevelUnknown1() {
 		} else {
 			LevelUnknown1();
 			alert('U dont haz Key dumbass');
-			document.getElementById('key11').style.display = "none";
 			HasKey = false;
 		}
 	}
@@ -640,7 +652,6 @@ function LevelUnknown1() {
 		} else {
 			LevelUnknown1();
 			alert('U dont haz Key dumbass');
-			document.getElementById('key11').style.display = "none";
 			HasKey = false;
 		}
 	}
@@ -666,6 +677,7 @@ function LevelUnknown2() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Slipping out of stealth only to offload a crew of Fallen, the Skiff is rarely seen. On the other hand, its rumbling, booming arrival is difficult to miss - as are the weapons it uses to support its troop deployments.";
 
@@ -679,7 +691,7 @@ function LevelUnknown2() {
 		if(HasKey12){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key12').style.display = "none";
 			HasKey = false;
@@ -690,7 +702,7 @@ function LevelUnknown2() {
 		if(HasKey12){
 			LevelUnknown3();
 		} else {
-			Level1();
+			LevelUnknown1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key12').style.display = "none";
 			HasKey = false;
@@ -701,7 +713,7 @@ function LevelUnknown2() {
 		if(HasKey12){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key12').style.display = "none";
 			HasKey = false;
@@ -729,6 +741,7 @@ function LevelUnknown3() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Thrall are the smallest, weakest and fastest Hive enemies. Their main purpose is to overwhelm their enemies with sheer volume and numbers, although it doesn't take that much effort to kill one. Feral and fearless, Thralls are a plague upon the battlefield. Their swarming, twisted frames are driven by unfettered rage, and of all the creatures of the Hive, they are the fastest.";
 
@@ -742,7 +755,7 @@ function LevelUnknown3() {
 		if(HasKey13){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key13').style.display = "none";
 			HasKey = false;
@@ -753,7 +766,7 @@ function LevelUnknown3() {
 		if(HasKey13){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key13').style.display = "none";
 			HasKey = false;
@@ -764,7 +777,7 @@ function LevelUnknown3() {
 		if(HasKey13){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown1();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key13').style.display = "none";
 			HasKey = false;
@@ -792,6 +805,7 @@ function LevelUnknown4() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "A Tombship is a Hive dropship. They possess a form of a teleportation, warping in and out of combat zones with green wormholes. The Tombships also have defensive capabilities, as they are able to launch purple explosive blasts, known as Axion Darts, at enemy targets.";
 
@@ -805,9 +819,8 @@ function LevelUnknown4() {
 		if(HasKey14){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown4();
 			alert('U dont haz Key dumbass');
-			document.getElementById('key14').style.display = "none";
 			HasKey = false;
 		}
 	}
@@ -816,9 +829,8 @@ function LevelUnknown4() {
 		if(HasKey14){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown4();
 			alert('U dont haz Key dumbass');
-			document.getElementById('key14').style.display = "none";
 			HasKey = false;
 		}
 	}
@@ -827,9 +839,8 @@ function LevelUnknown4() {
 		if(HasKey14){
 			LevelUnknown5();
 		} else {
-			Level1();
+			LevelUnknown4();
 			alert('U dont haz Key dumbass');
-			document.getElementById('key14').style.display = "none";
 			HasKey = false;
 		}
 	}
@@ -855,6 +866,7 @@ function LevelUnknown5() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Hydras are segmented machines that float through the air to attack; each segment bearing its own turret, these robotic centipedes fire these turrets as they wriggle through the air. Hydras also utilize unidirectional defensive circular shields and are equipped with a powerful weapon called the Aeon Maul. In addition to being formidable combatants, Hydras serve as major processing nodes for the Vex network.";
 
@@ -868,7 +880,7 @@ function LevelUnknown5() {
 		if(HasKey15){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown4();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key15').style.display = "none";
 			HasKey = false;
@@ -879,7 +891,7 @@ function LevelUnknown5() {
 		if(HasKey15){
 			LevelUnknown6();
 		} else {
-			Level1();
+			LevelUnknown4();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key15').style.display = "none";
 			HasKey = false;
@@ -890,7 +902,7 @@ function LevelUnknown5() {
 		if(HasKey15){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown4();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key15').style.display = "none";
 			HasKey = false;
@@ -918,6 +930,7 @@ function LevelUnknown6() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "Massive, even for Cabal standards, they lead through their own relentless demeanor, wielding devastating Gatling-style Heavy Slug Throwers and Cabal Slug Launchers.";
 
@@ -931,7 +944,7 @@ function LevelUnknown6() {
 		if(HasKey16){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown4();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key16').style.display = "none";
 			HasKey = false;
@@ -942,7 +955,7 @@ function LevelUnknown6() {
 		if(HasKey16){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown4();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key16').style.display = "none";
 			HasKey = false;
@@ -953,7 +966,7 @@ function LevelUnknown6() {
 		if(HasKey16){
 			Leveldead();
 		} else {
-			Level1();
+			LevelUnknown4();
 			alert('U dont haz Key dumbass');
 			document.getElementById('key16').style.display = "none";
 			HasKey = false;
@@ -979,6 +992,7 @@ function LevelTeleport() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "none";
 	document.getElementById('option3').style.display = "none";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "You've been teleported to an unknown chamber!";
 	document.getElementById('level_title').innerHTML = "YOU'VE BEEN TELEPORTED!";
@@ -1000,6 +1014,7 @@ function LevelTeleport2() {
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "none";
 	document.getElementById('option3').style.display = "none";
+	document.getElementById('gebruikersnaam').style.display = "none";
 
 	document.getElementById('verhaaltje').innerHTML = "You've been teleported to an unknown chamber!";
 	document.getElementById('level_title').innerHTML = "YOU'VE BEEN TELEPORTED!";
