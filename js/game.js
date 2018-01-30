@@ -1,6 +1,6 @@
 // javascript library for simple game development
 document.getElementById('option1').innerHTML = "Start";
-document.getElementById('level_title').innerHTML = "Start het spel";
+document.getElementById('level_title').innerHTML = ("Start het spel");
 document.getElementById('verhaaltje').innerHTML = "In het spel Destiny vecht je tegen verschillende monsters. Het is steeds de bedoeling om het beste wapen uit te kiezen tegen dat monster. Wanneer je het wapen gekozen hebt, blijkt of je het monster hebt verslagen met dat wapen en ga je naar de volgende kamer. Heb je niet het goede wapen gekozen ga je dood en verlies je het spel. Je zult dan opnieuw moeten beginnen. Er zijn in totaal 8 kamers waarin je steeds een sleutel moet vinden om door te kunnen naar de volgende, maar pas op want je kunt ook in een verkeerde kamer terecht komen!";
 
 var HasKey = false;
