@@ -1,5 +1,4 @@
 // javascript library for simple game development
-document.getElementById('option1').innerHTML = "Start";
 document.getElementById('level_title').innerHTML = ("Start het spel");
 document.getElementById('verhaaltje').innerHTML = "In het spel Destiny vecht je tegen verschillende monsters. Het is steeds de bedoeling om het beste wapen uit te kiezen tegen dat monster. Wanneer je het wapen gekozen hebt, blijkt of je het monster hebt verslagen met dat wapen en ga je naar de volgende kamer. Heb je niet het goede wapen gekozen ga je dood en verlies je het spel. Je zult dan opnieuw moeten beginnen. Er zijn in totaal 8 kamers waarin je steeds een sleutel moet vinden om door te kunnen naar de volgende, maar pas op want je kunt ook in een verkeerde kamer terecht komen!";
 
@@ -9,10 +8,6 @@ function Level1() {
 	//Destiny The Fallen Dreg
 
 	console.log("Level1()");
-
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
 
 	document.getElementById('optiondownload').style.display = "none";
 	document.getElementById('option1').style.display = "block";
@@ -86,10 +81,6 @@ function Level2() {
 
 	console.log("Level2()");
 
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
-
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
@@ -145,10 +136,6 @@ function Level3() {
 	//Destiny The Fallen Servitoren
 
 	console.log("Level3()");
-
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
 
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
@@ -208,10 +195,6 @@ function Level4() {
 	//Destiny The Hive Ogre
 
 	console.log("Level4()");
-
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
 
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
@@ -299,10 +282,6 @@ function Level5() {
 
 	console.log("Level5()");
 
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
-
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
@@ -361,10 +340,6 @@ function Level6() {
 
 	console.log("Level6()");
 
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
-
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
@@ -422,10 +397,6 @@ function Level7() {
 	//The Vex Harpies
 
 	console.log("Level7()");
-
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
 
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
@@ -486,10 +457,6 @@ function Level8() {
 	//The Cabal Psion
 
 	console.log("Level8()");
-
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
 
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
@@ -599,10 +566,6 @@ function LevelUnknown1() {
 
 	console.log("LevelUnknown1");
 
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
-
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
@@ -658,10 +621,6 @@ function LevelUnknown2() {
 	//The Fallen Skiff
 
 	console.log("LevelUnknown2");
-
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
 
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
@@ -722,10 +681,6 @@ function LevelUnknown3() {
 
 	console.log("LevelUnknown3");
 
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
-
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
@@ -785,10 +740,6 @@ function LevelUnknown4() {
 
 	console.log("LevelUnknown4");
 
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
-
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
 	document.getElementById('option3').style.display = "block";
@@ -844,10 +795,6 @@ function LevelUnknown5() {
 	// The Vex Hydra
 
 	console.log("LevelUnknown5");
-
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
 
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
@@ -907,10 +854,6 @@ function LevelUnknown6() {
 	//The Cabal Colossus
 
 	console.log("LevelUnknown6");
-
-	document.getElementById('option1').innerHTML = 'Shotgun';
-	document.getElementById('option2').innerHTML = 'Zwaard';
-	document.getElementById('option3').innerHTML = 'Laser';
 
 	document.getElementById('option1').style.display = "block";
 	document.getElementById('option2').style.display = "block";
